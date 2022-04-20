@@ -1,0 +1,8 @@
+m = input()
+a = set(map(str, input().split()))
+n = input()
+b = set(map(str, input().split()))
+arrA = a.difference(b)
+arrB = b.difference(a)
+arrF = arrA.union(arrB)
+print("\n".join(sorted(arrF, key=int)))
